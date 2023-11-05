@@ -1,0 +1,165 @@
+.box {
+  width: 400px;
+  height: 400px;
+  background: #ff0000;
+  margin: 0 auto;
+}
+
+.box2 {
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+  margin: 0 auto;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+}
+
+.box3-1,
+.box3-2 {
+  width: 300px;
+  height: 300px;
+  margin-left: 150px;
+}
+
+.box3-1 {
+  background: #0008ff;
+  margin-left: 0;
+}
+
+.box3-2 {
+  background: #22ff00;
+}
+
+.boxes2 {
+  position: relative;
+}
+
+.boxes2-inner {
+  position: relative;
+  left: 50%;
+  float:left;
+}
+
+.box4-1,
+.box4-2 {
+  position: relative;
+  left: -50%;
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+.box4-1 {
+  background: #ff0000;
+}
+
+.box4-2 {
+  background: #0008ff;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.flex-boxes{
+  display: flex;
+  justify-content: center;
+}
+.box5{
+  width: 300px;
+  height: 300px;
+  position: relative;
+
+}
+.first{
+  background: #ff0000;
+}
+.second{
+  background: #0008ff;
+}
+.third{
+  background: #ff8400;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.flex-boxes2{
+  display: flex;
+  justify-content: center;
+}
+
+.box6{
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.fourth{
+  background: #00ff51;
+}
+.fifth{
+  background: #d4ff00;
+
+}
+.sixth{
+  background: #ff00e1;
+}
+.flex-boxes3{
+  display: flex;
+  justify-content: center;
+}
+.box7{
+  width: 300px;
+  height: 300px;
+}
+.blue-swicth{
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .box {
+    width: 200px;
+    height: 200px;
+  }
+
+  .box2 {
+    background: #007bff;
+  }
+
+  .box3-2 {
+    margin-left: 50px;
+  }
+
+  .box4-1,
+  .box4-2 {
+    position: unset;
+    float: none;
+    left: 0;
+  }
+  .boxes2-inner {
+    position: unset;
+    left: 0;
+    float:none;
+  }
+  .flex-boxes{
+    flex-direction: row-reverse;
+  }
+
+  .fourth{
+    order: 1;
+  }
+  .fifth{
+    order: 2;
+  }
+  .blue-swicth{
+    display: block;
+  }
+  .red-switch{
+    display: none;
+  }
+}
