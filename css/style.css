@@ -12,115 +12,84 @@
   margin: 0 auto;
 }
 
-.boxes {
+.flex-boxes1 {
   display: flex;
   justify-content: center;
 }
-
-.box3-1,
-.box3-2 {
+.box-base {
   width: 300px;
   height: 300px;
-  margin-left: 150px;
+}
+.blue-box {
+  background: #0008ff;
+}
+.green-box {
+  background: #22ff00;
+}
+.red-box{
+  background: #ff0000;
+}
+.orange-box{
+  background: #ff8400;
+}
+.lightgreen-box {
+  background: #00ff51;
+}
+.yellow-box {
+  background: #d4ff00;
+}
+.pink-box {
+  background: #ff00e1;
 }
 
-.box3-1 {
-  background: #0008ff;
+.q3-1,
+.q3-2{
+  margin-left: 150px;
+}
+.q3-1{
   margin-left: 0;
 }
 
-.box3-2 {
-  background: #22ff00;
-}
 
-.boxes2 {
+.floatboxes {
   position: relative;
 }
-
-.boxes2-inner {
+.floatboxes-inner {
   position: relative;
   left: 50%;
-  float:left;
+  float: left;
 }
-
-.box4-1,
-.box4-2 {
+.q4-1,
+.q4-2 {
   position: relative;
   left: -50%;
   width: 300px;
   height: 300px;
   float: left;
 }
-
-.box4-1 {
-  background: #ff0000;
-}
-
-.box4-2 {
-  background: #0008ff;
-}
-
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
 
-.flex-boxes{
+.flex-boxes2 {
   display: flex;
   justify-content: center;
 }
-.box5{
-  width: 300px;
-  height: 300px;
+.center-base {
   position: relative;
-
 }
-.first{
-  background: #ff0000;
-}
-.second{
-  background: #0008ff;
-}
-.third{
-  background: #ff8400;
-}
-.center{
+.center {
   position: absolute;
   top: 50%;
   left: 50%;
 }
-.flex-boxes2{
-  display: flex;
-  justify-content: center;
-}
 
-.box6{
-  width: 300px;
-  height: 300px;
-  position: relative;
-}
-.fourth{
-  background: #00ff51;
-}
-.fifth{
-  background: #d4ff00;
-
-}
-.sixth{
-  background: #ff00e1;
-}
-.flex-boxes3{
-  display: flex;
-  justify-content: center;
-}
-.box7{
-  width: 300px;
-  height: 300px;
-}
-.blue-swicth{
+.blue-swicth {
   display: none;
 }
+
 @media screen and (max-width: 960px) {
   .box {
     width: 200px;
@@ -131,35 +100,39 @@
     background: #007bff;
   }
 
-  .box3-2 {
+  .q3-2 {
     margin-left: 50px;
   }
 
-  .box4-1,
-  .box4-2 {
+  .q4-1,
+  .q4-2 {
     position: unset;
     float: none;
     left: 0;
   }
-  .boxes2-inner {
+
+  .floatboxes-inner {
     position: unset;
     left: 0;
-    float:none;
+    float: none;
   }
-  .flex-boxes{
+
+  .flex-boxes2 {
     flex-direction: row-reverse;
   }
 
-  .fourth{
+  .q6-1 {
     order: 1;
   }
-  .fifth{
+  .q6-2 {
     order: 2;
   }
-  .blue-swicth{
+
+  .blue-swicth {
     display: block;
   }
-  .red-switch{
+
+  .red-switch {
     display: none;
   }
 }
