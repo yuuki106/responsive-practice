@@ -16,79 +16,120 @@
   display: flex;
   justify-content: center;
 }
+
 .box-base {
   width: 300px;
   height: 300px;
 }
+
 .blue-box {
   background: #0008ff;
 }
+
 .green-box {
   background: #22ff00;
 }
-.red-box{
+
+.red-box {
   background: #ff0000;
 }
-.orange-box{
+
+.orange-box {
   background: #ff8400;
 }
+
 .lightgreen-box {
   background: #00ff51;
+  order: 0;
 }
+
 .yellow-box {
   background: #d4ff00;
+  order: 0;
+
 }
+
 .pink-box {
   background: #ff00e1;
+  order: 0;
+
 }
 
 .q3-1,
-.q3-2{
+.q3-2 {
   margin-left: 150px;
 }
-.q3-1{
+
+.q3-1 {
   margin-left: 0;
 }
 
+/* ---------------------------------------- */
 
-.floatboxes {
-  position: relative;
+
+.floatboxes-inner{
+  width: 600px;
+  margin: 0 auto;
 }
-.floatboxes-inner {
-  position: relative;
-  left: 50%;
-  float: left;
-}
+
 .q4-1,
 .q4-2 {
-  position: relative;
-  left: -50%;
   width: 300px;
   height: 300px;
   float: left;
 }
+
+
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
 
-.flex-boxes2 {
+
+
+/* ---------------------------------------- */
+.flexboxes{
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
-.center-base {
+.q5{
   position: relative;
 }
-.center {
+.q5 p{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+/* ---------------------------------------- */
+.flex-boxes2{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.q6{
+  position: relative;
+}
+.q6 p{
   position: absolute;
   top: 50%;
   left: 50%;
 }
 
-.blue-swicth {
+/* ---------------------------------------- */
+
+.change-boxes{
+  display: flex;
+  justify-content: center;
+}
+.q7-1{
+  display: block;
+}
+.q7-2{
   display: none;
 }
+
 
 @media screen and (max-width: 960px) {
   .box {
@@ -104,35 +145,31 @@
     margin-left: 50px;
   }
 
+  .floatboxes-inner{
+    margin: 0;
+  }
+
   .q4-1,
   .q4-2 {
-    position: unset;
-    float: none;
-    left: 0;
-  }
-
-  .floatboxes-inner {
-    position: unset;
-    left: 0;
     float: none;
   }
 
-  .flex-boxes2 {
+  .flexboxes{
     flex-direction: row-reverse;
   }
-
-  .q6-1 {
+  .lightgreen-box {
     order: 1;
   }
-  .q6-2 {
+
+  .yellow-box{
     order: 2;
   }
 
-  .blue-swicth {
+  .q7-1{
+    display: none;
+  }
+  .q7-2{
     display: block;
   }
 
-  .red-switch {
-    display: none;
-  }
 }
